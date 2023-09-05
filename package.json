@@ -1,0 +1,22 @@
+{
+  "name": "gfind",
+  "version": "1.0.0",
+  "description": "Searches for a keyword inside a folder of E01 files.\\\r Requires fls and mmls from the sleuthkit project in path.\r ```\r gfind.exe <evidence folder> <keyword>\r ```",
+  "main": "gfind.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node gfind.js",
+    "build": "nexe -i gfind.js -o gfind.exe -b -p C:/Python310 --ico GD.ico --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calimelo/gfind.git"
+  },
+  "keywords": [],
+  "author": "Dr. Kaan Gunduz",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/calimelo/gfind/issues"
+  },
+  "homepage": "https://github.com/calimelo/gfind#readme"
+}
