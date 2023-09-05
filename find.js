@@ -115,7 +115,7 @@ async function flsfunc(image, keyword) {
 
   return new Promise((resolve, reject) => {
     let command = 'powershell.exe -command ';
-    command += `"fls -o ${offset} -f ${fstype} -r  '${imagepath}' | Select-String ${keyword}"`;
+    command += `"fls -o ${offset} -f ${fstype} -r  '${imagepath}' | Select-String '${keyword}'"`;
     exec(command, options, (err, stdout, stderr) => {
       if (err) {
         resolve(err);
